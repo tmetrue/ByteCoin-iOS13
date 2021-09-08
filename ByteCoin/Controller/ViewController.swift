@@ -60,7 +60,12 @@ extension ViewController: UIPickerViewDelegate {
 
 extension ViewController: CoinManagerDelegate {
     func coinManager(_ coinManager: CoinManager, didUpdate exchangeRate: ExchangeRateModel) {
+        DispatchQueue.main.async {
+            self.bitcoinLabel.text = String(format: "%.2f", exchangeRate.rate)
+            self.currecyLabel.text = exchangeRate.quote
+        }
         print(exchangeRate.rate)
+        
     }
     
     func coinManager(_ coinManager: CoinManager, didFail error: Error) {
