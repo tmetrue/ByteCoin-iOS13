@@ -61,7 +61,6 @@ struct CoinManager {
             let rate = decodedData.rate
             
             let exchangeRate = ExchangeRateModel(base: base, quote: quote, rate: rate)
-            print("\(exchangeRate.quote)/\(exchangeRate.base): \(exchangeRate.rate)")
             return exchangeRate
         } catch {
             delegate?.coinManager(self, didFail: error)

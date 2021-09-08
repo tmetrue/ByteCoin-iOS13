@@ -11,4 +11,8 @@ struct ExchangeRateModel {
     let base: String
     let quote: String
     let rate: Double
+    
+    var rateString: String {
+        return String(format: "%.2f", rate)
+    }
 }

@@ -51,7 +51,6 @@ extension ViewController: UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("\(row): \(coinManager.currencyArray[row]) selected")
         coinManager.getCoinPrice(for: coinManager.currencyArray[row])
     }
 }
@@ -61,10 +60,9 @@ extension ViewController: UIPickerViewDelegate {
 extension ViewController: CoinManagerDelegate {
     func coinManager(_ coinManager: CoinManager, didUpdate exchangeRate: ExchangeRateModel) {
         DispatchQueue.main.async {
-            self.bitcoinLabel.text = String(format: "%.2f", exchangeRate.rate)
+            self.bitcoinLabel.text = exchangeRate.rateString
             self.currecyLabel.text = exchangeRate.quote
         }
-        print(exchangeRate.rate)
         
     }
     
