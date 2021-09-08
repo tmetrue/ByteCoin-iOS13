@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		339AC35526E8E1E20078D2F6 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339AC35426E8E1E20078D2F6 /* Secrets.swift */; };
+		339AC35726E8E7F50078D2F6 /* ExchangeRateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339AC35626E8E7F50078D2F6 /* ExchangeRateData.swift */; };
+		339AC35926E8E9300078D2F6 /* ExchangeRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339AC35826E8E9300078D2F6 /* ExchangeRateModel.swift */; };
 		ADA8AC092329367100626376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC082329367100626376 /* AppDelegate.swift */; };
 		ADA8AC0B2329367100626376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC0A2329367100626376 /* SceneDelegate.swift */; };
 		ADA8AC0D2329367100626376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC0C2329367100626376 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		339AC35426E8E1E20078D2F6 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		339AC35626E8E7F50078D2F6 /* ExchangeRateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateData.swift; sourceTree = "<group>"; };
+		339AC35826E8E9300078D2F6 /* ExchangeRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateModel.swift; sourceTree = "<group>"; };
 		ADA8AC052329367100626376 /* ByteCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByteCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA8AC082329367100626376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA8AC0A2329367100626376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				ADA8AC1F2329398300626376 /* CoinManager.swift */,
+				339AC35426E8E1E20078D2F6 /* Secrets.swift */,
+				339AC35626E8E7F50078D2F6 /* ExchangeRateData.swift */,
+				339AC35826E8E9300078D2F6 /* ExchangeRateModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,8 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA8AC202329398300626376 /* CoinManager.swift in Sources */,
+				339AC35526E8E1E20078D2F6 /* Secrets.swift in Sources */,
 				ADA8AC0D2329367100626376 /* ViewController.swift in Sources */,
+				339AC35926E8E9300078D2F6 /* ExchangeRateModel.swift in Sources */,
 				ADA8AC092329367100626376 /* AppDelegate.swift in Sources */,
+				339AC35726E8E7F50078D2F6 /* ExchangeRateData.swift in Sources */,
 				ADA8AC0B2329367100626376 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

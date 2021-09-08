@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         
         currencyPicker.dataSource = self
         currencyPicker.delegate = self
+        coinManager.delegate = self
     }
 }
 
@@ -52,6 +53,18 @@ extension ViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print("\(row): \(coinManager.currencyArray[row]) selected")
         coinManager.getCoinPrice(for: coinManager.currencyArray[row])
+    }
+}
+
+//MARK: - CoinManagerDelegate
+
+extension ViewController: CoinManagerDelegate {
+    func coinManager(_ coinManager: CoinManager, didUpdate exchangeRate: ExchangeRateModel) {
+        print(exchangeRate.rate)
+    }
+    
+    func coinManager(_ coinManager: CoinManager, didFail error: Error) {
+        print(error)
     }
 }
 
